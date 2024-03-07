@@ -5,3 +5,11 @@ docs/documentation.log
 docs/documentation.aux
 Pipfile
 Pipfile.lock
+mlruns
+mlartifacts
+docs/documentation.aux
+docs/documentation.log
+docs/documentation.pdf
+docs/documentation.synctex.gz
+docs/documentation.tex
+docs/documentation.toc
