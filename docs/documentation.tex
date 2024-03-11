@@ -7,9 +7,11 @@
 
 \geometry{a4paper, total={170mm,257mm}, left=20mm, top=20mm}
 
-\title{\Huge Data Exploration Project}
+\title{\Huge Apfeltalk \\
+\large Ein Datenexplorationsprojekt zu der Qualität von Äpfeln }
+
 \author{Timo Nössler}
-\date{\vspace{2cm}05.03.2024}
+\date{\vspace{2cm}10.03.2024}
 
 \begin{document}
 \clearpage\maketitle
@@ -18,6 +20,7 @@
 \textbf{Matrikelnummer:} 123456789
 \end{center}
 \newpage
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
 \tableofcontents
 \newpage
 
@@ -31,38 +34,38 @@ Dieser Datensatz enthält Informationen über verschiedene Attribute einer Reihe
 \hline
 \textbf{Attribut} & \textbf{Beschreibung} \\
 \hline
-A\_id & Unique identifier for each fruit \\
-Size & Size of the fruit \\
-Weight & Weight of the fruit \\
-Sweetness & Degree of sweetness of the fruit \\
-Crunchiness & Texture indicating the crunchiness of the fruit \\
-Juiciness & Level of juiciness of the fruit \\
-Ripeness & Stage of ripeness of the fruit \\
-Acidity & Acidity level of the fruit \\
-Quality & Overall quality of the fruit \\
+A\_id & Eindeutige Kennung für jede Frucht \\
+Größe & Größe der Frucht \\
+Gewicht & Gewicht der Frucht \\
+Süße & Grad der Süße der Frucht \\
+Knackigkeit & Textur mit Angabe der Knackigkeit der Frucht \\
+Saftigkeit & Grad der Saftigkeit der Frucht \\
+Reifegrad & Reifegrad der Frucht \\
+Säuregehalt & Säuregrad der Frucht \\
+Qualität & Gesamtqualität der Frucht \\
 \hline
 \end{tabular}
-\caption{Attributes of the fruit table}
+\caption{Attribute des Datensatzes}
 \end{table}
 
 
 \subsection{Erklärung der Referenzwerte}
-Die Hintergrundrecherche zu dem Datensatz hat ergeben, dass sich die Daten auf einen Standard Apfel beziehen und somit keine Werte in einer SI Einheit darstellen. Nach dem Bundeszentrum für Ernährung muss ein Apfel in Europa eine Mindestgröße von 60 Milimeter im Durchmesser aufweisen und ein Mindestgewicht von 90 Gramm haben. Somit wird bei einem Wert von über Null von einem über dem Standard liegenden Apfel ausgegangen und bei einem Wert unter Null somit von einem Apfel unter den Standard Maßen.
+Die Hintergrundrecherche zu dem Datensatz hat ergeben, dass sich die Daten auf einen Standard Apfel beziehen und somit keine Werte in einer SI Einheit darstellen. Nach dem Bundeszentrum für Ernährung muss ein Apfel in Europa eine Mindestgröße von 60 Millimeter im Durchmesser aufweisen und ein Mindestgewicht von 90 Gramm haben. Somit wird bei einem Wert von über Null von einem über dem Standard liegenden Apfel ausgegangen und bei einem Wert unter Null somit von einem Apfel unter den Standard Maßen.
 
 \section{Daten Exploration}
 
 
-\subsection{Technische Datenanalyse}
-Die Charakterisierung der Daten erfolgt auf der Grundlage verschiedener statistischer und erläuternden Funktionen die auf den Datensatz angewendet werden. Dies dient dazu einen umfassenden Einblick in den Datensatz zu erhalten. Der "Overall Overview" ermöglicht einen ersten Überblick über die Daten. Ergänzt wird der Einblick durch die "Data Summary. Hier werden Informationen über die Dimension des Datensatzes gewonnen.Die "Data Info" gibt detaillierte Informationen über die Art der Daten in jeder Spalte, einschließlich der Anzahl der Nicht-Null-Einträge. Dies hilft, die Art der Daten zu verstehen und mögliche Probleme der Datenqualität, wie fehlende Werte zu identifizieren. Die "Data Description" liefert statistische Kennzahlen zu den numerischen Spalten des Datensatzes, wie zum Beispiel den Mittelwert, die Standardabweichung und Quartile. Dies hilft, ein besseres Verständnis für die
+\subsection{Technische Datenanalyse !Umschreiben!}
+Die Charakterisierung der Daten erfolgt auf der Grundlage verschiedener statistischer und erläuternden Funktionen die auf den Datensatz angewendet werden. Dies dient dazu einen umfassenden Einblick in den Datensatz zu erhalten. Der "Overall Overview" ermöglicht einen ersten Überblick über die Daten. Ergänzt wird der Einblick durch die "Data Summary". Hier werden Informationen über die Dimension des Datensatzes gewonnen.Die "Data Info" gibt detaillierte Informationen über die Art der Daten in jeder Spalte, einschließlich der Anzahl der Nicht-Null-Einträge. Dies hilft, die Art der Daten zu verstehen und mögliche Probleme der Datenqualität, wie fehlende Werte zu identifizieren. Die "Data Description" liefert statistische Kennzahlen zu den numerischen Spalten des Datensatzes, wie zum Beispiel den Mittelwert, die Standardabweichung und Quartile. Dies hilft, ein besseres Verständnis für die
 Verteilung der Daten zu entwickeln. Zuletzt zeigt die Auswertung der "Missing Values" die Anzahl der fehlenden Werte in jeder Spalte des Datensatzes. Dies ist entscheidend, um potenzielle Datenqualitätsprobleme zu identifizieren und zu entscheiden, wie mit den fehlenden Werten umgegangen werden soll. Insgesamt bietet die Datenexploration einen fundierten Überblick über den vorliegenden Datensatz und dient als Grundlage zur weiteren Verarbeitung.\\
 \begin{table}[h]
 \centering
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
-\textbf{A\_id} & \textbf{Size} & \textbf{Weight} & \textbf{Sweetness} & \textbf{...} & \textbf{Quality} \\
+\textbf{A\_id} & \textbf{Größe} & \textbf{Gewicht} & \textbf{Süße} & \textbf{...} & \textbf{Qualität} \\
 \hline
-mean & -0.503015 & -0.989547 & -0.470479 & ... & ---\\
-std & 1.928059 & 1.602507 & 1.943441 & ... & --- \\
+\O & -0.503015 & -0.989547 & -0.470479 & ... & ---\\
+s & 1.928059 & 1.602507 & 1.943441 & ... & --- \\
 min & -7.151703 & -7.149848 & -6.894485 & ... & --- \\
 25\% & -1.816765 & -2.011770 & -1.738425 & ... & --- \\
 50\% & -0.513703 & -0.984736 & -0.504758 & ... & --- \\
@@ -80,25 +83,25 @@ Die Visualisierungen werden verwendet, um die Beziehung zwischen verschiedenen A
 Der Boxplot zeigt die Verteilung der spezifischen Attribute (Größe, Gewicht, Süße, Knackigkeit, Saftigkeit, Reife, Säure) in Bezug auf die Qualität der Äpfel. So wird ermöglicht einen Eindruck über die Verteilung und die Ausreißer in den Attributen in Abhängigkeit von der Qualität zu visualisieren.\\
 Die Berechnung der Summe der "guten" und "schlechten" Werte sowie die anschließende Darstellung als Kreisdiagramm ermöglicht es, die prozentuale Verteilung von guten und schlechten Äpfeln, in dem Datensatz darzustellen. Die Erstellung einer Heatmap in Verbindung mit einer Korrelationsmatrix gibt einen Überblick über mögliche Korrelationen zwischen den verschiedenen Attributen. Es wird gezeigt, wie stark, oder schwach, die Attribute untereinander korrelieren. Des weiteren ermöglicht es, Muster und Zusammenhänge zu identifizieren.\\ Abschließend visualisiert der Pairplot die Beziehung zwischen den verschiedenen Merkmalen der Äpfel durch Streudiagramme und Histogramme. Durch die Farbcodierung nach Qualität können Unterschiede und Muster zwischen guten und schlechten Äpfeln identifiziert werden. Insgesamt ermöglichen diese Schritte eine umfassende Analyse der Attribute in Bezug auf die Qualität und tragen dazu bei, Muster, Zusammenhänge und Unterschiede zwischen guten und schlechten Äpfeln zu identifizieren.\\
 
-\subsection{Feature Engineering}
-Ein Decision Tree Classifier ist ein Werkzeug im Bereich des maschinellen Lernens, das zur Klassifizierung von Daten verwendet wird. Es basiert auf dem Prinzip der rekursiven Partitionierung, bei der der Datensatz in immer kleinere Teilmengen aufgeteilt wird, um Entscheidungsregeln abzuleiten.\\ 
-Die Überprüfung der Wichtigkeit einzelner Werte mittels eines Decision Tree Classifiers ermöglicht es, die Beiträge der verschiedenen Merkmale zur Klassifikation zu verstehen und diejenigen Merkmale zu identifizieren, die entscheidend für die Klassifikation sind. Dies wiederum kann dazu beitragen, die Modellinterpretation zu verbessern, die Merkmalsauswahl zu optimieren und Einblicke in die zugrunde liegenden Daten zu gewinnen. Die Auswertung des Decision Tree Classifier ergibt, dass die 'Size' (22\%), 'Ripeness' (20\%), 'Juiciness' (19\%) den größten Einfluss auf die Klassifiezierung der Äpfel haben. 
+\subsection{Technische Merkmale}
+Um die technischen Merkmale des Datensatzes zu extrahieren, wurde ein {\itshape 'Decision Tree Classifier'} eingesetzt. Dieser ist ein Werkzeug im Bereich des maschinellen Lernens, das zur Klassifizierung von Daten verwendet wird. Es basiert auf dem Prinzip der rekursiven Partitionierung, bei der der Datensatz in immer kleinere Teilmengen aufgeteilt wird, um Entscheidungsregeln abzuleiten.\\ 
+Die Überprüfung der Wichtigkeit einzelner Werte mittels eines {\itshape 'Decision Tree Classifiers'} ermöglicht es, die Beiträge der verschiedenen Merkmale zur Klassifikation zu verstehen und diejenigen Merkmale zu identifizieren, die entscheidend für die Klassifikation sind. Dies wiederum kann dazu beitragen, die Modellinterpretation zu verbessern, die Merkmalsauswahl zu optimieren und Einblicke in die zugrunde liegenden Daten zu gewinnen. Die Auswertung des {\itshape 'Decision Tree Classifier'} ergibt, dass die "Größe" (22\%), "Reife" (20\%), "Saftigkeit" (19\%) den größten Einfluss auf die Klassifiezierung der Äpfel haben (siehe Tabelle 3). Im weiteren Verlauf der Untersuchung und der Trainingsphase, sollte somit besonders auf diese Merkmale geschaut werden um das Modell zu trainieren. 
 \begin{table}[h]
 \centering
 \begin{tabular}{|c|c|}
 \hline
 \textbf{Attribut} & \textbf{Beschreibung} \\
 \hline
-Size & 22\% \\
-Weight & 11\% \\
-Sweetness & 13\% \\
-Crunchiness & 1\% \\
-Juiciness & 19\% \\
-Ripeness & 20\% \\
-Acidity & 13\% \\
+Größe & 22\% \\
+Gewicht & 11\% \\
+Süße & 13\% \\
+Knackigkeit & 1\% \\
+Saftigkeit & 19\% \\
+Reifegrad & 20\% \\
+Säuregrad & 13\% \\
 \hline
 \end{tabular}
-\caption{Einfluss der Attribute}
+\caption{Einfluss der Attribute auf das Modell}
 \end{table}
 
 \subsection{Datensatz Split}
@@ -120,5 +123,10 @@ Gradient Boosting hat den Vorteil, tiefe und komplexe Modelle zu erstellen, die 
 Es gibt verschiedene Implementierungen von Gradient Boosting, darunter XGBoost und LightGBM, die zu den bekanntesten gehören. In dieser Arbeit wird der XGBoost Algorithmus verwendet.\\
 Allerdings hat Gradient Boosting auch Nachteile. Eine Herausforderung bei dieser Methode ist, dass sie mehr Zeit und Speicher benötigt als manche Alternativen, da jedes Modell in der Sequenz erstellt werden muss. Außerdem ist es schwierig, die passenden Parameter zur Optimierung des Modells auszuwählen. Jedoch überwiegen in diesem Fall die Vorteile wie Skalierbarkeit, Regulierung und die Flexibilität. So kann der Algorithmus auch auf große Datenmengen angewandt werden, er bietet verschiedene Möglichkeiten um Over-, und Underfitting zu vermeiden. Auch die Flexibilität zwischen unterschiedlichen Datentypen und nicht vorhandene Daten ist ein Vorteil des XGBoost.
 
+\subsection{Hyperparametertuning}
+Das Hyperparametertuning für den Gradient Boost Algorithmus wurde zuerst per Ausschlussverfahren durchgeführt. Das hierfür nötige Reporting wurde durch die Software MLflow realisiert. Der Verlauf der Verbesserung der Genauigkeit des Algorithmus lässt sich im Diagramm erkennen (!VERWEIS AUF ABB:!). Um jedoch zu einem wirtschaftlichen Ergebnis zu kommen und da hier ein vergleichsweise kleiner Datensatz vorliegt wurde sich für die Gittersuch (GridSearchCV) Methode entschieden. Die Gittersuche ist ein Verfahren zur systematischen Optimierung von Hyperparametern, bei dem verschiedene Kombinationen von Parametern miteinander ausprobiert werden und anhand einer spezifizierten Metrik bewertet werden. In diesem Fall wird ROC AUC\footnote{Der ROC AUC-Wert (Receiver Operating Characteristic Area Under the Curve) ist eine Metrik zur Bewertung der Leistung eines Klassifizierungsmodells.} als Bewertungsmetrik verwendet und so wird die beste mögliche Kombination gefunden. Mittels dieser Technik konnte durch die manuelle Erstellung eines Parameterrasters mit verschiedenen Ausprägungen der Parameter eine schnelle Eingrenzung der optimalen Hyperparameter durchgeführt werden. Die Suche nach den optimalen Parametern fand auf dem Trainingsdatensatz statt. 
+\subsection{Evaluation und Ergebnisdarstellung}
+
+\subsection{Vorhersage - Demo}
 
 \end{document}
