@@ -7,3 +7,5 @@ Pipfile.lock
 mlruns
 mlartifacts
 docs/documentation.toc
+*.pdf
+docs/Apfeltalk.pptx
